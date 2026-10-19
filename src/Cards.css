@@ -1,0 +1,45 @@
+.cards {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.cards h2 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.hint {
+  text-align: center;
+  color: #777;
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+}
+
+.card.open {
+  border-color: #2196f3;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.card p {
+  margin: 10px 0 0;
+  line-height: 1.6;
+  font-size: 14px;
+}

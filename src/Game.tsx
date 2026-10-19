@@ -19,7 +19,7 @@ function Game() {
 
   const changeLife = () => {
     setPollution(Math.max(pollution - 15, 0));
-    setTech(tech - 10)
+    setTech(tech - 5)
   };
 
   const reset = () => {

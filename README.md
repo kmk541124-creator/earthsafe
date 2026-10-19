@@ -23,6 +23,8 @@ npm start
 
 브라우저에서 http://localhost:3000 으로 접속합니다.
 
+혹은 https://kmk541124-creator.github.io/earthsafe/ 로 접속하면 바로 볼 수 있습니다.
+
 ## 빌드
 
 ```

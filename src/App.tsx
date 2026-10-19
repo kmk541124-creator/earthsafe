@@ -29,7 +29,7 @@ function App() {
   const [tech, setTech] = useState(0);                 // 현재 기술 수치 (0~100)
   const [pollution, setPollution] = useState(0);       // 현재 환경 오염 수치 (0~100)
   const [status, setStatus] = useState<Status>('playing'); // 게임 진행 상태
-  const [log, setLog] = useState<string[]>(['지구의 미래가 당신의 선택에 달려 있습니다.']); // 행동 기록
+  const [log, setLog] = useState<string[]>(['지구를 지켜봅시다']); // 행동 기록
 
   // 기록을 맨 위에 추가하는 함수
   const addLog = (message: string) => {
@@ -49,7 +49,7 @@ function App() {
       setStatus('lose');
       addLog(
         nextTech >= MAX
-          ? '인공태양을 발명했지만… 지구는 이미 버틸 수 없었습니다.'
+          ? '인공태양을 발명했지만 지구가 먼저 망했습니다'
           : '오염이 한계를 넘었습니다. 지구가 멸망했습니다.'
       );
       return;
@@ -57,7 +57,7 @@ function App() {
 
     if (nextTech >= MAX) {
       setStatus('win');
-      addLog('인공태양 완성! 깨끗한 지구에서 무한한 에너지를 얻었습니다.');
+      addLog('인공태양 완성!');
       return;
     }
 
@@ -76,7 +76,7 @@ function App() {
     setTech(0);
     setPollution(0);
     setStatus('playing');
-    setLog(['지구의 미래가 당신의 선택에 달려 있습니다.']);
+    setLog(['지구 지키세요']);
   };
 
   // 오염 정도에 따라 프로그레스 색상 단계 결정
